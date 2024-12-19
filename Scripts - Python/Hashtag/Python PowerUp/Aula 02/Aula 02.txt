@@ -1,0 +1,20 @@
+# passo a passo
+# passo 1: importar a base de dados
+import pandas
+
+tabela = pandas.read_csv("cancelamento_sample.csv")
+
+print(tabela)
+
+# passo 2: visualizar a base de dados
+   # entender o que tem na base de dados
+   # encontrar ascagadas da base de dados
+# passo 3: tratamento de dados - corrigir as cagadas da base de dados
+# passo 4: análise inicial dos cancelamentos
+# passo 5: análise de causas do cancelamento dos clientes
+
+pip install pandas openpyxl numpy ipykernel nbformat plotly
+
+(assistir a aula depois com o vs code instalado)
+
+dadospython2024

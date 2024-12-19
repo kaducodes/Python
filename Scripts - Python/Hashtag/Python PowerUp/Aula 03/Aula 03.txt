@@ -1,0 +1,19 @@
+Aula 03
+IA
+
+Desafio: Você foi contratado por um banco para conseguir definir o score de crédito dos clientes. Você precisa analisar todos os clientes do banco e, com base nessa analise, criar um modelo que consiga ler as informações do cliente e dizer automaticamente o score de crédito dele: Ruim, Ok, Bom
+
+Base de dados
+float
+int
+object
+
+IA não trabalha com texto, pra isso temos que tratar as colunas que são texto.
+
+IA é feito em 3 etapas
+importar IA
+criar IA
+treinar IA
+
+Kaggle: tem base de dados reais de várias áreas diferentes para treinar
+
