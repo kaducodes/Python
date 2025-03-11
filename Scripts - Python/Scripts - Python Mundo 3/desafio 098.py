@@ -4,31 +4,47 @@
 #b) de 10 até 0, de 2 em 2
 #c) uma contagem personalizada
 
-import time
+from time import sleep
 
 def linhas():
     print('-=' * 30)
 
 def contador(inicio, fim, passo):
-    if fim > 0:
-        print(f'Contagem de {inicio} até {fim-1} de {passo} em {passo}')
-    else:
-        print(f'Contagem de {inicio} até {fim+1} de {passo*-1} em {passo*-1}')
+
+    #Verificações
+    if passo < 0:
+        passo *= -1
+
     if passo == 0:
         passo = 1
-    for i in range(inicio, fim, passo):
-        print(f'{i} ', end='')
-        time.sleep(0.5)
-    print('FIM!')
 
-linhas()
-contador(1, 11, 1)
-linhas()
-contador(10, -1, -2)
-linhas()
+    linhas()
+    print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
+    sleep(1)
+
+    if inicio < fim:
+        cont = inicio
+        while cont <= fim:
+            print(f'{cont} ', end='', flush=True)
+            sleep(0.5)
+            cont += passo
+        print('FIM!')
+    else:
+        cont = inicio
+        while cont >= fim:
+            print(f'{cont} ', end='', flush=True)
+            sleep(0.5)
+            cont -= passo
+        print('FIM!')
+    linhas()
+
+
+#Programa principal
+contador(1, 10, 1)
+contador(10, 0, 2)
 
 print('Agora é sua vez de personalizar a contagem!')
 inicio = int(input("Início: "))
-fim = int(input("Fim: "))
-passo = int(input("Passo: "))
+fim =    int(input("Fim:    "))
+passo =  int(input("Passo:  "))
 contador(inicio, fim, passo)

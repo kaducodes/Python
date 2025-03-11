@@ -7,11 +7,11 @@
 def escreva(frase):
     tamanho = len(frase) + 4
     print('~' * tamanho)
-    print('  ', end='')
-    print(frase, end='')
-    print('  ')
+    print(f'  {frase}')
     print('~' * tamanho)
 
+
+#Programa principal
 escreva('Gustavo Guanabara')
 escreva('Curso de Python no YouTube')
 escreva('CeV')
