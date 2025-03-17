@@ -11,3 +11,7 @@ moeda.resumo(p, 80, 35)
 #-----------------------------
 #Preço analisado: R$
 #Dobro do preço:  R$
+#Metade do preço: R$
+#80% de aumento:  R$
+#35% de redução:  R$
+#-----------------------------
