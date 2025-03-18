@@ -1,14 +1,10 @@
-def metade(valor):
-    return valor / 2
-
-
-def dobro(valor):
-    return valor * 2
-
-
-def aumentar(valor, porcentagem):
-    return valor * (1 + porcentagem / 100)
-
-
-def diminuir(valor, porcentagem):
-    return valor * (1 - porcentagem / 100)
+def resumo(valor, aumento, redução):
+    print('-' * 25)
+    print('    RESUMO DO VALOR    ')
+    print('-' * 25)
+    print(f'Preço analisado: R$ {valor:.2f}')
+    print(f'Dobro do preço:  R$ {valor * 2 : .2f}')
+    print(f'Metade do preço: R$ {valor / 2 : .2f}')
+    print(f'{aumento}% de aumento:  R$ {valor * (1 + aumento / 100) : .2f}')
+    print(f'{redução}% de redução:  R$ {valor * (1 - redução / 100) : .2f}')
+    print('-' * 25)

@@ -1,5 +1,5 @@
 def moeda (valor):
-    return f'R$ {valor :.2f}'
+    return f'R$ {valor :.2f}'.replace('.', ',')
 
 
 def metade(valor):
