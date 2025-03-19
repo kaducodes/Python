@@ -1,10 +1,10 @@
-def resumo(valor, aumento, redução):
-    print('-' * 25)
-    print('    RESUMO DO VALOR    ')
-    print('-' * 25)
+def resumo(valor=0, aumento=10, redução=5):
+    print('-' * 30)
+    print('RESUMO DO VALOR'.center(30))
+    print('-' * 30)
     print(f'Preço analisado: R$ {valor:.2f}')
     print(f'Dobro do preço:  R$ {valor * 2 : .2f}')
     print(f'Metade do preço: R$ {valor / 2 : .2f}')
     print(f'{aumento}% de aumento:  R$ {valor * (1 + aumento / 100) : .2f}')
     print(f'{redução}% de redução:  R$ {valor * (1 - redução / 100) : .2f}')
-    print('-' * 25)
+    print('-' * 30)

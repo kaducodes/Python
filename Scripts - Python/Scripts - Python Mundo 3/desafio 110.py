@@ -5,7 +5,7 @@ from ex110 import moeda
 p = float(input('Digite o Preço: R$ '))
 a = int(input('Digite a Porcentagem de Aumento: '))
 r = int(input('Digite a Porcentagem de Redução: '))
-moeda.resumo(p, 80, 35)
+moeda.resumo(p, a, r)
 #80% de aumento
 #35% de redução
 #-----------------------------
