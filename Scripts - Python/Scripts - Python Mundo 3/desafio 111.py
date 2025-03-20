@@ -9,7 +9,7 @@
 from ex111.utilidadescev import moeda
 
 p = float(input('Digite o Preço: R$ '))
-moeda.resumo(p, 35, 22)
+moeda.resumo(p, 20, 12)
 
 #35% de aumento
 #22% de redução

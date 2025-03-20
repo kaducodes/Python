@@ -5,8 +5,9 @@
 #ERRO: "" é um preço inválido!
 
 from ex112.utilidadescev import moeda
+from ex112.utilidadescev import dado
 
-p = float(input('Digite o Preço: R$ '))
+p = dado.leiaDinheiro('Digite o Preço: R$ ')
 moeda.resumo(p, 35, 22)
 
 #35% de aumento

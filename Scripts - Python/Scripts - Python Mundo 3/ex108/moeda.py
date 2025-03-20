@@ -3,16 +3,16 @@ def moeda (valor):
 
 
 def metade(valor):
-    return valor / 2
+    return f'{valor / 2}'.replace('.', ',')
 
 
 def dobro(valor):
-    return valor * 2
+    return f'{valor * 2}'.replace('.', ',')
 
 
 def aumentar(valor, porcentagem):
-    return valor * (1 + porcentagem / 100)
+    return f'{valor * (1 + porcentagem / 100)}'.replace('.', ',')
 
 
 def diminuir(valor, porcentagem):
-    return valor * (1 - porcentagem / 100)
+    return f'{valor * (1 - porcentagem / 100)}'.replace('.', ',')
