@@ -2,39 +2,18 @@
 
 #O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.
 
+from ex115.lib.interface import *
+from time import sleep
+
 while True:
-    print('-' * 60)
-    print('MENU PRINCIPAL'.center(60))
-    print('-' * 60)
-    print('1 - Ver pessoas cadastradas')
-    print('2 - Cadastrar nova Pessoa')
-    print('3 - Sair do Sistema')
-    print('-' * 60)
-    opc = int(input('Sua Opção: '))
-
-    if opc == 1:
-        print('-' * 60)
-        print('PESSOAS CADASTRADAS'.center(60))
-        print('-' * 60)
-
-    elif opc == 2:
-        print('-' * 60)
-        print('NOVO CADASTRO'.center(60))
-        print('-' * 60)
-        nome = str(input('Nome: '))
-        while True:
-            try:
-                idade = int(input('Idade: '))
-            except ValueError:
-                print('ERRO: Por favor, digite um número inteiro válido')
-            else:
-                print(f'Novo registro de {nome} adicionado')
-                break
-        
-
-    elif opc == 3:
-        print('Saindo do sistema... Até logo!'.center(60))
+    resposta = menu(['Listar Pessoas Cadastradas', 'Cadastrar Nova Pessoa', 'Sair do Sistema'])
+    if resposta == 1:
+        cabeçalho('Opção 1')
+    elif resposta == 2:
+        cabeçalho('Opção 2')
+    elif resposta == 3:
+        cabeçalho('Saindo do sistema... Até logo!')
         break
-    
     else:
-        print('ERRO: Digite uma opção válida!')
+        print('\033[31mERRO! Digite uma opção válida!\033[m')
+    sleep(1)
